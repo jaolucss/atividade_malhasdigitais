@@ -5,10 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malha Digital da Paraíba</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <div class="container">
+        <h1>Mapa do Município</h1>
+
+        <div class="controles">
+            <label for="select-municipio">Selecione um município:</label>
+            <select id="select-municipio">
+                <option value="">Carregando municípios...</option>
+            </select>
+        </div>
+
+        <div class="mapa-container">
+            <p id="nome-municipio"></p>
+            <svg id="mapa-svg"></svg>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
